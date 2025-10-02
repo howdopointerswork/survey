@@ -8,8 +8,7 @@ script.type = "text/javascript";
 
 script.onload = function(){
 	
-	let auth, signup = false;
-	let signout = true;
+	document.querySelector('input[type=range]').
 
 	$(document).ready(function(){
 

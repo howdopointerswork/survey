@@ -15,6 +15,8 @@ h1{
 	border: 2px solid black;
 	border-radius: 2px;
 	background-color: white;
+	font-size: 72px;
+	padding: 0.5em;
 	
 }
 
@@ -45,6 +47,11 @@ section{
 	border-top: 20px solid #630518;
 }
 
+input[type=range]{
+
+	margin: 4em;
+}
+
 #main{
 
 	background-color: white;
@@ -61,9 +68,12 @@ section{
 	color: white;
 }
 
-#intro{
+
+
+.intro{
 
 	padding: 2em;
+	line-height: 2em;
 }
 
 
