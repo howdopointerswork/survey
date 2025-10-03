@@ -26,7 +26,8 @@
 			<p class="intro"> 
 Thank you for taking the time to complete this survey. We are exploring interests in clubs and groups, both connected to KPU and independent. Your responses will help us understand what types of activities students value, what they are wiling to pay, and how much time they can commit. This survey should take about 5-7 minutes. All answers will remain confidential.</p>
 
-		<form>
+		<form action="survey.php" method="post">
+		
 		<section id="A">	
 
 			<h3><strong>Section A:</strong> General Interest in Clubs & Groups</h3>
@@ -36,10 +37,10 @@ Thank you for taking the time to complete this survey. We are exploring interest
 					<li>
 						<h4>Are you currently a member of any club or group (at KPU or outside)?</h4>
 						<ul>
-							<li><input type="radio" name="a1">Yes, KPU-Related</li>
-							<li><input type="radio" name="a1">Yes, non-KPU-Related</li>
-							<li><input type="radio" name="a1">Both</li>
-							<li><input type="radio" name="a1">No</li>
+							<li><input type="radio" name="a1" value="1">Yes, KPU-Related</li>
+							<li><input type="radio" name="a1" value="2">Yes, non-KPU-Related</li>
+							<li><input type="radio" name="a1" value="3">Both</li>
+							<li><input type="radio" name="a1" value="4">No</li>
 						</ul>	
 					</li>
 
@@ -47,10 +48,10 @@ Thank you for taking the time to complete this survey. We are exploring interest
 					<li>
 						<h4>How interested are you in joining a new club or group in the next year?</h4>
 						<ul>
-							<li><input type="radio" name="a2">Very Interested</li>
-							<li><input type="radio" name="a2">Somewhat Interested</li>
-							<li><input type="radio" name="a2">Neutral</li>
-							<li><input type="radio" name="a2">Not Interested</li>
+							<li><input type="radio" name="a2" value="1">Very Interested</li>
+							<li><input type="radio" name="a2" value="2">Somewhat Interested</li>
+							<li><input type="radio" name="a2" value="3">Neutral</li>
+							<li><input type="radio" name="a2" value="4">Not Interested</li>
 						</ul>
 					</li>
 				</ol>
@@ -71,9 +72,9 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>Would you be willing to pay membership fees for a club or group you are interested in?</h4>
 					<ul>
-						<li><input type="radio" name="b1">Yes</li>
-						<li><input type="radio" name="b1">No</li>
-						<li><input type="radio" name="b1">Maybe/Depends</li>
+						<li><input type="radio" name="b1" value="1">Yes</li>
+						<li><input type="radio" name="b1" value="2">No</li>
+						<li><input type="radio" name="b1" value="3">Maybe/Depends</li>
 
 					</ul>
 
@@ -82,12 +83,12 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>What price range would you feel comfortable paying for a club / group membership per semester?</h4>
 					<ul>
-						<li><input type="radio" name="b2">$5 - $10</li>
-						<li><input type="radio" name="b2">$10 - $20</li>
-						<li><input type="radio" name="b2">$20 - $30</li>
-						<li><input type="radio" name="b2">$30 - $40</li>
-						<li><input type="radio" name="b2">$40 - $50</li>
-						<li><input type="radio" name="b2">$50+</li>
+						<li><input type="radio" name="b2" value="1">$5 - $10</li>
+						<li><input type="radio" name="b2" value="2">$10 - $20</li>
+						<li><input type="radio" name="b2" value="3">$20 - $30</li>
+						<li><input type="radio" name="b2" value="4">$30 - $40</li>
+						<li><input type="radio" name="b2" value="5">$40 - $50</li>
+						<li><input type="radio" name="b2" value="6">$50+</li>
 					</ul>
 				</li>
 
@@ -95,13 +96,13 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>What factors would influence how much you are willing to pay? (CHECK ALL THAT APPLY)</h4>
 					<ul>
-						<li><input type="checkbox">Type of Activities Offered</li>
-						<li><input type="checkbox">Frequency of Events / Meetings</li>
-						<li><input type="checkbox">Quality of facilities / Equipment</li>
-						<li><input type="checkbox">Networking or Career Opportunities</li>
-						<li><input type="checkbox">Personal enjoyment or recreation</li>
+						<li><input type="checkbox" name="b3[]">Type of Activities Offered</li>
+						<li><input type="checkbox" name="b3[]" value="Frequency of Events / Meetings"></li>
+						<li><input type="checkbox" name="b3[]" value="Quality of facilities / Equipment"></li>
+						<li><input type="checkbox" name="b3[]" value="Networking or Career Opportunities"></li>
+						<li><input type="checkbox" name="b3[]" value="Personal enjoyment or recreation"></li>
 						<!-- js to add field upon checking -->
-						<li><input type="checkbox">Other (Please Specify)</li>
+						<li><input type="checkbox" name="b3[]" value="Other (Please Specify)"></li>
 					</ul>
 				</li>
 
@@ -608,6 +609,10 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			</ul>
 </section>
 
+		<!-- Change to button, onclick check if anything is empty, if so prohibit submit 
+		otherwise, change type to submit and press
+
+		Check for email / prevent dupes -->
 		<input type="submit" value="Submit" id="submit">
 
 

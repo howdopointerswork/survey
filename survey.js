@@ -8,11 +8,10 @@ script.type = "text/javascript";
 
 script.onload = function(){
 	
-	document.querySelector('input[type=range]').
 
 	$(document).ready(function(){
 
-
+		console.log("Hello");
 	});
 
 
