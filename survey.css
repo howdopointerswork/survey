@@ -87,6 +87,31 @@ ol{
 
 }
 
+button{
+
+	font-size: 48px;
+	margin: 2em;
+	background-color: #630518;
+	color: white;
+
+}
+
+#0, #1{
+
+	  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+nav{
+
+	background-color: #630518;
+	color: white;
+	text-align: center;
+	font-size: 48px;
+	
+
+
+}
+
 /*input[type="radio"]{
 
 	transform: scale(1.5);

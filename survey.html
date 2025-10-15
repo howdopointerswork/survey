@@ -7,7 +7,7 @@
 	<!-- link css here -->
 		<link rel="stylesheet" href="survey.css">
 	<!-- link js/ts here -->
-		<script src="survey.js"> </script>
+		<script src="survey.js"></script>
 		<title>Survey</title>
 
 
@@ -17,18 +17,61 @@
 
 	<body>
 
-		<h1>Student Interest Survey: Clubs & Groups</h1>	
+		<h1 id="header">Petition To Expand Shuttle Bus Service to KPU Richmond Campus</h1>	
 
 		<div id="main">
+			<nav>
+				<p>Page <span id="current">1</span> of 17</p>
+			</nav>
+
+			<section id="0">
+
+				<p><strong>What is the Problem:</strong> Students at Kwantlen Polytechnic University currently face limited shuttle bus options connection, Surrey, Langley, and Cloverdale campuses with the Richmond campus. This creates barriers to accessibility, safety, and academic participation, particularly to those with evening classes and late study or work schedules.</p>
+
+				<p><strong>What we are doing about this problem:</strong> We, the undersigned, respectfully petition the KPU Multipass Committee and the KPU Student Association to expand shuttle bus service between Surrey, Langley, and Cloverdale campuses and the Richmond campus, operating from 8:00am to 11:00pm, Monday through Friday.</p>
+
+				<p><strong>Why does this matter:</strong></p>
+				<ul>
+				<li>Improve accessibility and equity for students across all campuses.</li>
+				<li>Enhance safety for students travelling at night.</li>
+				<li>Reduce reliance on cars and support KPU’s sustainability goals.</li>
+				</ul>
+
+				<p><strong>Our Call to Action:</strong> We urge the KPU Multipass Committee and KPU Student Association to take immediate steps to review, consider, and implement expanded shuttle services for the benefit of the student body.</p>
 
 
+				<form action="survey.php" method="post" id="petition">
 
-			<p class="intro"> 
+					
+					<table>
+						<tr>
+							<th>Full Name</th>
+							<th>KPU ID</th>
+							<th>KPU Email</th>
+							<th>Signature</th>
+						</tr>
+						<tr>
+							<td><input type="text" name="name"></td>
+							<td><input type="text" name="num"></td>
+							<td><input type="text" name="email"></td>
+							<td><input type="text" name="sig"></td>
+						</tr>
+
+					</table>
+
+				
+					
+					<button name="action" value="sign">Sign</button>
+				</form>
+
+			</section>
+
+			<p class="intro" id="1" style="display: none;"> 
 Thank you for taking the time to complete this survey. We are exploring interests in clubs and groups, both connected to KPU and independent. Your responses will help us understand what types of activities students value, what they are wiling to pay, and how much time they can commit. This survey should take about 5-7 minutes. All answers will remain confidential.</p>
 
-		<form action="survey.php" method="post">
+		<form action="survey.php" method="post" id="form">
 		
-		<section id="A">	
+		<section id="2" style="display: none;">	
 
 			<h3><strong>Section A:</strong> General Interest in Clubs & Groups</h3>
 	
@@ -37,10 +80,10 @@ Thank you for taking the time to complete this survey. We are exploring interest
 					<li>
 						<h4>Are you currently a member of any club or group (at KPU or outside)?</h4>
 						<ul>
-							<li><input type="radio" name="a1" value="1">Yes, KPU-Related</li>
-							<li><input type="radio" name="a1" value="2">Yes, non-KPU-Related</li>
-							<li><input type="radio" name="a1" value="3">Both</li>
-							<li><input type="radio" name="a1" value="4">No</li>
+							<li><input type="radio" name="a1" value="0">Yes, KPU-Related</li>
+							<li><input type="radio" name="a1" value="1">Yes, non-KPU-Related</li>
+							<li><input type="radio" name="a1" value="2">Both</li>
+							<li><input type="radio" name="a1" value="3">No</li>
 						</ul>	
 					</li>
 
@@ -48,23 +91,21 @@ Thank you for taking the time to complete this survey. We are exploring interest
 					<li>
 						<h4>How interested are you in joining a new club or group in the next year?</h4>
 						<ul>
-							<li><input type="radio" name="a2" value="1">Very Interested</li>
-							<li><input type="radio" name="a2" value="2">Somewhat Interested</li>
-							<li><input type="radio" name="a2" value="3">Neutral</li>
-							<li><input type="radio" name="a2" value="4">Not Interested</li>
+							<li><input type="radio" name="a2" value="0">Very Interested</li>
+							<li><input type="radio" name="a2" value="1">Somewhat Interested</li>
+							<li><input type="radio" name="a2" value="2">Neutral</li>
+							<li><input type="radio" name="a2" value="3">Not Interested</li>
 						</ul>
 					</li>
 				</ol>
-
-				<!-- forms should use radio buttons -->
-				<!-- submit button with POST request -->
-				<!-- form with js -->
+			
 
 
 		</section>
 
 
-		<section id="B">
+
+		<section id="3" style="display: none;">
 
 			<h3><strong>Section B:</strong> Willingness to Pay</h3>
 
@@ -72,9 +113,9 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>Would you be willing to pay membership fees for a club or group you are interested in?</h4>
 					<ul>
-						<li><input type="radio" name="b1" value="1">Yes</li>
-						<li><input type="radio" name="b1" value="2">No</li>
-						<li><input type="radio" name="b1" value="3">Maybe/Depends</li>
+						<li><input type="radio" name="b1" value="0">Yes</li>
+						<li><input type="radio" name="b1" value="1">No</li>
+						<li><input type="radio" name="b1" value="2">Maybe/Depends</li>
 
 					</ul>
 
@@ -83,12 +124,12 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>What price range would you feel comfortable paying for a club / group membership per semester?</h4>
 					<ul>
-						<li><input type="radio" name="b2" value="1">$5 - $10</li>
-						<li><input type="radio" name="b2" value="2">$10 - $20</li>
-						<li><input type="radio" name="b2" value="3">$20 - $30</li>
-						<li><input type="radio" name="b2" value="4">$30 - $40</li>
-						<li><input type="radio" name="b2" value="5">$40 - $50</li>
-						<li><input type="radio" name="b2" value="6">$50+</li>
+						<li><input type="radio" name="b2" value="0">$5 - $10</li>
+						<li><input type="radio" name="b2" value="1">$10 - $20</li>
+						<li><input type="radio" name="b2" value="2">$20 - $30</li>
+						<li><input type="radio" name="b2" value="3">$30 - $40</li>
+						<li><input type="radio" name="b2" value="4">$40 - $50</li>
+						<li><input type="radio" name="b2" value="5">$50+</li>
 					</ul>
 				</li>
 
@@ -96,13 +137,13 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>What factors would influence how much you are willing to pay? (CHECK ALL THAT APPLY)</h4>
 					<ul>
-						<li><input type="checkbox" name="b3[]">Type of Activities Offered</li>
-						<li><input type="checkbox" name="b3[]" value="Frequency of Events / Meetings"></li>
-						<li><input type="checkbox" name="b3[]" value="Quality of facilities / Equipment"></li>
-						<li><input type="checkbox" name="b3[]" value="Networking or Career Opportunities"></li>
-						<li><input type="checkbox" name="b3[]" value="Personal enjoyment or recreation"></li>
+						<li><input type="checkbox" name="b3[]" value="0">Type of Activities Offered</li>
+						<li><input type="checkbox" name="b3[]" value="1">Frequency of Events / Meetings</li>
+						<li><input type="checkbox" name="b3[]" value="2">Quality of facilities / Equipment</li>
+						<li><input type="checkbox" name="b3[]" value="3">Networking or Career Opportunities</li>
+						<li><input type="checkbox" name="b3[]" value="4">Personal enjoyment or recreation</li>
 						<!-- js to add field upon checking -->
-						<li><input type="checkbox" name="b3[]" value="Other (Please Specify)"></li>
+						<li><input type="checkbox" name="b3[]" value="5">Other (Please Specify)</li>
 					</ul>
 				</li>
 
@@ -112,7 +153,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="C">
+		<section id="4" style="display: none;">
 			<h3><strong>Section C:</strong> Areas of Interest</h3>
 
 			<ol>
@@ -137,7 +178,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		
 
 
-		<section id="D">
+		<section id="5" style="display: none;">
 
 				<h3><strong>Section D:</strong> Frequency & Commitment</h3>
 
@@ -170,7 +211,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="E">
+		<section id="6" style="display: none;">
 
 			<h3><strong>Section E:</strong> Decision-Making Factors</h3>
 
@@ -200,7 +241,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="F">
+		<section id="7" style="display: none;">
 
 			<h3><strong>Section F:</strong> Open Feedback</h3>
 
@@ -226,14 +267,14 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 		</section>
 
-
+<section id="8" style="display: none;">
 	<h1><strong>General Assessment:</strong> Roles & Sociability</h1>
 
-	<p class="intro">This section is designed to explore students’ potential interests, strengths, and comfort levels in taking on different roles within clubs or organizations. Your responses will help us understand how likely students are to participate in leadership, creative, technical, or social roles, and how clubs can be structured to meet those needs.</p>
+	<p>This section is designed to explore students’ potential interests, strengths, and comfort levels in taking on different roles within clubs or organizations. Your responses will help us understand how likely students are to participate in leadership, creative, technical, or social roles, and how clubs can be structured to meet those needs.</p>
+</section>
 
 
-
-		<section id="G">
+		<section id="9" style="display: none;">
 			<h3><strong>Section G:</strong> Roles Preferences</h3>
 			<ol>
 				<li>
@@ -268,7 +309,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="H">
+		<section id="10" style="display: none;">
 
 			<h3><strong>Section H:</strong> Skills & Comfort Levels</h3>
 
@@ -368,7 +409,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 
 
-		<section id="I">
+		<section id="11" style="display: none;">
 
 			<h3><strong>Section I:</strong> Personality & Sociability</h3>
 
@@ -431,7 +472,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="J">
+		<section id="12" style="display: none;">
 
 			<h3><strong>Section J:</strong> Leadership Readiness</h3>
 
@@ -492,7 +533,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="K">
+		<section id="13" style="display: none;">
 
 			<h3><strong>Section K:</strong> Open Reflection</h3>
 
@@ -519,7 +560,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 
-		<section id="L">
+		<section id="14" style="display: none;">
 
 			<h3><strong>Section L:</strong>  Registration & Contact Information</h3>
 
@@ -572,7 +613,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 
 
-<section id="consent">
+<section id="15" style="display: none;">
 		<h3>Consent</h3>
 
 			<p>I consent to being contacted about KPU student clubs, groups, leadership opportunities and updates to shuttle bus petition.</p>
@@ -591,7 +632,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 </section>
 
 
-<section id="opt">
+<section id="16" style="display: none;">
 		<h3>Optional Opt-In</h3>
 
 			<p>Would you like to receive a summary of this survey’s results and updates on next steps?</p>
@@ -608,15 +649,23 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 			</ul>
 </section>
-
+		
 		<!-- Change to button, onclick check if anything is empty, if so prohibit submit 
 		otherwise, change type to submit and press
 
 		Check for email / prevent dupes -->
-		<input type="submit" value="Submit" id="submit">
 
+	<button name="action" value="Submit" id="submit" style="display: none;">Submit</button>
 
 	</form>
+
+	<button id="prev" style="visibility: hidden;">Prev</button>
+
+	<button id="next">Next</button>
+
+
+
+
 
 
 		</div>
