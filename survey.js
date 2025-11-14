@@ -36,6 +36,7 @@ function loadButtons(){
 				if(page > 0){
 
 					$('#prev').css('visibility', 'visible');
+					$('#header').html('Student Interest Survey: Clubs & Groups');
 				}
 
 				if(page == 16){
@@ -47,6 +48,7 @@ function loadButtons(){
 				if(page == 0){
 
 					$('#prev').css('visibility', 'hidden');
+					$('#header').html('Petition To Expand Shuttle Bus Service to KPU Richmond Campus');
 				}
 
 				if(page < 16){
