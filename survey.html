@@ -19,10 +19,14 @@
 
 		<h1 id="header">Petition To Expand Shuttle Bus Service to KPU Richmond Campus</h1>	
 
+		<div id="buttons"></div>
+
 		<div id="main">
 			<nav>
 				<p>Page <span id="current">1</span> of 17</p>
 			</nav>
+
+
 
 			<section id="0">
 
@@ -43,7 +47,7 @@
 				<form action="survey.php" method="post" id="petition">
 
 					
-					<table>
+					<table style="margin: 0 auto;">
 						<tr>
 							<th>Full Name</th>
 							<th>KPU ID</th>
@@ -160,14 +164,14 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>Which Areas of Club Activities are you Most Interested in? (Select All That Apply)</h4>
 					<ul>
-						<li><input type="checkbox">Sports & Fitness (e.g., recreational sports, fitness groups, martial arts, outdoor activities)</li>
-						<li><input type="checkbox">Wellbeing & health (e.g., mediation, yoga, mental health support, nutrition)</li>
-						<li><input type="checkbox">Socializing & Networking (e.g., student mixers, cultural groups, language exchange, international student groups)</li>
-						<li><input type="checkbox">Artistic & Creative (e.g., music, painting, dance, drama, photography, film, design)</li>
-						<li><input type="checkbox">Academic & Technical (e.g., coding, engineering, business, finance, debate, accounting)</li>
-						<li><input type="checkbox">Practical Skills & Hobbies (e.g., cooking, gardening, crafts, automotive)</li>
-						<li><input type="checkbox">Community & Volunteering (e.g., charity drives, mentorship programs, activism)</li>
-						<li><input type="checkbox">Other (Please Specify)</li>
+						<li><input type="checkbox" name="c[]" value="0">Sports and Fitness (e.g., recreational sports, fitness groups, martial arts, outdoor activities)</li>
+						<li><input type="checkbox" name="c[]" value="1">Wellbeing and health (e.g., mediation, yoga, mental health support, nutrition)</li>
+						<li><input type="checkbox" name="c[]" value="2">Socializing and Networking (e.g., student mixers, cultural groups, language exchange, international student groups)</li>
+						<li><input type="checkbox" name="c[]" value="3">Artistic and Creative (e.g., music, painting, dance, drama, photography, film, design)</li>
+						<li><input type="checkbox" name="c[]" value="4">Academic and Technical (e.g., coding, engineering, business, finance, debate, accounting)</li>
+						<li><input type="checkbox" name="c[]" value="5">Practical Skills and Hobbies (e.g., cooking, gardening, crafts, automotive)</li>
+						<li><input type="checkbox" name="c[]" value="6">Community and Volunteering (e.g., charity drives, mentorship programs, activism)</li>
+						<li><input type="checkbox" name="c[]" value="7">Other (Please Specify)</li>
 					</ul>
 				</li>
 
@@ -187,21 +191,21 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>How Often Would You Realistically Commit to Attending Club or Group activities?</h4>
 					<ul>
-						<li><input type="radio" name="d1">Daily (multiple times a week)</li>
-						<li><input type="radio" name="d1">Weekly (once or twice a week)</li>
-						<li><input type="radio" name="d1">Monthly (1 – 3 times a month)</li>
-						<li><input type="radio" name="d1">Once per semester (special events only)</li>
+						<li><input type="radio" name="d1" value="0">Daily (multiple times a week)</li>
+						<li><input type="radio" name="d1" value="1">Weekly (once or twice a week)</li>
+						<li><input type="radio" name="d1" value="2">Monthly (1 – 3 times a month)</li>
+						<li><input type="radio" name="d1" value="3">Once per semester (special events only)</li>
 					</ul>
 				</li>
 
 				<li>
 					<h4>On average, How Many Hours Per Week Would You be Willing to Dedicate to a Club or Group?</h4>
 					<ul>
-						<li><input type="radio" name="d2">Less Than 1 Hour</li>
-						<li><input type="radio" name="d2">1 - 3 Hours</li>
-						<li><input type="radio" name="d2">4 - 6 Hours</li>
-						<li><input type="radio" name="d2">7 - 10 Hours</li>
-						<li><input type="radio" name="d2">More Than 10 Hours</li>
+						<li><input type="radio" name="d2" value="0">Less Than 1 Hour</li>
+						<li><input type="radio" name="d2" value="1">1 - 3 Hours</li>
+						<li><input type="radio" name="d2" value="2">4 - 6 Hours</li>
+						<li><input type="radio" name="d2" value="3">7 - 10 Hours</li>
+						<li><input type="radio" name="d2" value="4">More Than 10 Hours</li>
 					</ul>
 
 				</li>
@@ -219,21 +223,21 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>What is the Most Important Factor When deciding to Join a Club or Group? (Choose One)</h4>
 					<ul>
-						<li><input type="radio" name="e1">Cost / Affordability</li>
-						<li><input type="radio" name="e1">Location and Convenience</li>
-						<li><input type="radio" name="e1">Type of Activities Offered</li>
-						<li><input type="radio" name="e1">Time Commitment Required</li>
-						<li><input type="radio" name="e1">Opportunity for Leadership or Skill Development</li>
-						<li><input type="radio" name="e1">Social Opportunities and Meeting New People</li>
-						<li><input type="radio" name="e1">Career or Networking Potential</li>
-						<li><input type="radio" name="e1">Other (Please Specify)</li>
+						<li><input type="radio" name="e1" value="0">Cost / Affordability</li>
+						<li><input type="radio" name="e1" value="1">Location and Convenience</li>
+						<li><input type="radio" name="e1" value="2">Type of Activities Offered</li>
+						<li><input type="radio" name="e1" value="3">Time Commitment Required</li>
+						<li><input type="radio" name="e1" value="4">Opportunity for Leadership or Skill Development</li>
+						<li><input type="radio" name="e1" value="5">Social Opportunities and Meeting New People</li>
+						<li><input type="radio" name="e1" value="6">Career or Networking Potential</li>
+						<li><input type="radio" name="e1" value="7">Other (Please Specify)</li>
 					</ul>
 				</li>
 
 
 				<li>
 					<h4>Why is This Factor Important to You? (Open Text Response)</h4>
-					<textarea rows="10" cols="50"></textarea>
+					<textarea name="e2" rows="10" cols="50"></textarea>
 				</li>
 
 			</ol>
@@ -250,14 +254,14 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>If You Could Design Your Ideal Student Club / Group, What Would it be and Why? (Open Text Response)</h4>
 
-					<textarea rows="10" cols="50"></textarea>
+					<textarea rows="10" cols="50" name="f1"></textarea>
 
 				</li>
 
 				<li>
 					<h4>Do You Have Any Additional Comments or Suggestions About Student Clubs and Groups at KPU? (Open Text Response)</h4>
 
-					<textarea rows="10" cols="50"></textarea>
+					<textarea rows="10" cols="50" name="f2"></textarea>
 
 				</li>
 
@@ -281,26 +285,14 @@ Thank you for taking the time to complete this survey. We are exploring interest
 					<h4>How interested are you in participating in the following types of roles within a club or group? (rate each: Very interested / Somewhat interested / Not Interested)</h4>
 					<!-- Add values to display after -->
 					<ul>
-						<li>
-						Organizational & Leadership Roles (e.g., president, vice president, event coordinator, treasurer, secretary)<br>	
-						<input type="range" step="1" min="1" max="5">
-						</li>
+						<li>Organizational and Leadership Roles (e.g., president, vice president, event coordinator, treasurer, secretary)<br><input type="range" value="3" min="1" max="5" name="g1"></li>
 
-						<li>	
-						Artistic, Photography & Design Roles (e.g., graphic designer, media creator, photographer, performer, event branding)<br>		
-						<input type="range" step="1" min="1" max="5">
-						</li>
+						<li>Artistic, Photography and Design Roles (e.g., graphic designer, media creator, photographer, performer, event branding)<br><input type="range" value="3" min="1" max="5" name="g2"></li>
 
 
-						<li>
-						 Technology, Computer Science & Engineering Roles (e.g., coder, IT support, robotics, web designer, data analyst)<br>			
-						<input type="range" step="1" min="1" max="5">
-						</li>
+						<li>Technology, Computer Science and Engineering Roles (e.g., coder, IT support, robotics, web designer, data analyst)<br><input type="range" value="3" min="1" max="5" name="g3"></li>
 
-						<li>
-						 Social Engagement Roles (e.g., public speaker, host, outreach coordinator peer mentor, community builder)<br>	
-						<input type="range" step="1" min="1" max="5">
-						</li>
+						<li>Social Engagement Roles (e.g., public speaker, host, outreach coordinator peer mentor, community builder)<br><input type="range" value="3" min="1" max="5" name="g4"></li>
 
 					</ul>
 				</li>
@@ -319,25 +311,13 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<h4>How Comfortable are you in leading a group of your peers?</h4>
 
 				<ul>
-					<li>
-						<input type="radio" name="h1">
-						Very Comfortable
-					</li>
+					<li><input type="radio" name="h1" value="0">Very Comfortable</li>
 
-					<li>
-						<input type="radio" name="h2">
-						Somewhat Comfortable
-					</li>
+					<li><input type="radio" name="h1" value="1">Somewhat Comfortable</li>
 
-					<li>
-						<input type="radio" name="h3">
-						Neutral
-					</li>
+					<li><input type="radio" name="h1" value="2">Neutral</li>
 
-					<li>
-						<input type="radio" name="h4">
-						Not Comfortable
-					</li>
+					<li><input type="radio" name="h1" value="3">Not Comfortable</li>
 
 				</ul>
 
@@ -348,16 +328,16 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<h4>How comfortable are you in working on a team project with shared responsibilities?</h4>
 
 				<ul>
-					<li><input type="radio" name="h5">
+					<li><input type="radio" name="h2" value="0">
 						Very Comfortable</li>
 
-					<li><input type="radio" name="h6">
+					<li><input type="radio" name="h2" value="1">
 						Somewhat Comfortable</li>
 
-					<li><input type="radio" name="h7">
+					<li><input type="radio" name="h2" value="2">
 						Neutral</li>
 
-					<li><input type="radio" name="h8">
+					<li><input type="radio" name="h2" value="3">
 						Not Comfortable</li>											
 				</ul>
 
@@ -368,16 +348,16 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<h4>How comfortable are you in presenting or speaking in front of a group?</h4>
 
 				<ul>
-					<li><input type="radio" name="h9">
+					<li><input type="radio" name="h3" value="0">
 						Very Comfortable</li>
 
-					<li><input type="radio" name="h10">
+					<li><input type="radio" name="h3" value="1">
 						Somewhat Comfortable</li>
 
-					<li><input type="radio" name="h11">
+					<li><input type="radio" name="h3" value="2">
 						Neutral</li>
 
-					<li><input type="radio" name="h12">
+					<li><input type="radio" name="h3" value="3">
 						Not Comfortable</li>											
 				</ul>
 
@@ -388,16 +368,16 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<h4>How comfortable are you in taking initiative without being asked?</h4>
 
 				<ul>
-					<li><input type="radio" name="h13">
+					<li><input type="radio" name="h4" value="0">
 						Very Comfortable</li>
 
-					<li><input type="radio" name="h14">
+					<li><input type="radio" name="h4" value="1">
 						Somewhat Comfortable</li>
 
-					<li><input type="radio" name="h15">
+					<li><input type="radio" name="h4" value="2">
 						Neutral</li>
 
-					<li><input type="radio" name="h16">
+					<li><input type="radio" name="h4" value="3">
 						Not Comfortable</li>											
 				</ul>
 
@@ -421,17 +401,17 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 				<ul>
 					<li>
-						<input type="radio" name="i1">
-						Introverted (prefer small groups, quiet reflection, independent tasks)
+						<input type="radio" name="i1" value="0">
+							     Introverted (prefer small groups, quiet reflection, independent tasks)
 					</li>
 
 					<li>
-						<input type="radio" name="i2">
+						<input type="radio" name="i1" value="1">
 						Ambiverted (balance between introversion and extroversion depending on the situation)
 					</li>
 
 					<li>
-						<input type="radio" name="i3">
+						<input type="radio" name="i1" value="2">
 						Extroverted (energized by groups, outgoing, enjoy socializing)
 					</li>
 
@@ -446,19 +426,19 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<h4>How do you prefer to build connections with others?</h4>
 
 				<ul>
-					<li><input type="radio" name="h1">One-on-One Conversations
+					<li><input type="radio" name="i2" value="0">One-on-One Conversations
 					</li>
 
-					<li><input type="radio" name="h1">
+					<li><input type="radio" name="i2" value="1">
 						Small group Settings</li>
 
-					<li><input type="radio" name="h1">
+					<li><input type="radio" name="i2" value="2">
 						Large Group or Social Events</li>
 
-					<li><input type="radio" name="h1">
+					<li><input type="radio" name="i2" value="3">
 						Online/Virtual Platforms</li>		
 
-					<li><input type="radio" name="h1">
+					<li><input type="radio" name="i2" value="4">
 						I Prefer to Keep to Myself</li>										
 				</ul>
 
@@ -484,22 +464,22 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 					<ul>
 						<li>
-							<input type="radio">
+							<input type="radio" name="j1" value="0">
 							Very Likely
 						</li>
 
 						<li>
-							<input type="radio">
+							<input type="radio" name="j1" value="1">
 							Somewhat Likely
 						</li>
 
 						<li>
-							<input type="radio">
+							<input type="radio" name="j1" value="2">
 							Neutral
 						</li>
 
 						<li>
-							<input type="radio">
+							<input type="radio" name="j1" value="3">
 							Not Likely
 						</li>
 
@@ -513,7 +493,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 					<h4>What leadership qualities do you feel you already possess? (open text response)</h4>
 
-					<textarea rows="10" cols="50"></textarea>
+					<textarea rows="10" cols="50" name="j2"></textarea>
 
 				</li>
 
@@ -522,7 +502,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 					<h4>What skills or training would make you feel more confident in taking on leadership or specialized roles? (open text)</h4>
 
-					<textarea rows="10" cols="50"></textarea>
+					<textarea rows="10" cols="50" name="j3"></textarea>
 
 				</li>
 
@@ -542,7 +522,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>If you had to choose one area (Leadership, Creative/Design, Technical, or Social) where you think you could contribute the most, which would it be and why? (open text response)</h4>
 
-					<textarea rows="10" cols="50"></textarea>
+					<textarea rows="10" cols="50" name="k1"></textarea>
 
 				</li>
 
@@ -550,7 +530,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>What challenges or barriers might prevent you from participating in a leadership or specialized role in a student group? (open text response)</h4>
 
-					<textarea rows="10" cols="50"></textarea>
+					<textarea rows="10" cols="50" name="k2"></textarea>
 
 				</li>
 
@@ -569,19 +549,19 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<ol>
 
 				<li><p><strong>Full Name</strong><br></p>
-					<input type="text">
+					<input type="text" name="l1">
 				</li>
 
 				<li><p><strong>Student Number</strong><br></p>
-					<input type="text">
+					<input type="text" name="l2">
 				</li>
 
 				<li><p><strong>KPU Email</strong><br></p>
-					<input type="text">
+					<input type="text" name="l3">
 				</li>
 
 				<li><p><strong>Phone Number</strong><br></p>
-					<input type="text">
+					<input type="text" name="l4">
 				</li>
 
 				<li><p><strong>Preferred Method of Contact</strong><br></p>
@@ -589,17 +569,17 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 					<ul>
 						<li>
-							<input type="radio">
+							<input type="radio" name="l5" value="0">
 							Email
 						</li>
 
 						<li>
-							<input type="radio">
+							<input type="radio" name="l5" value="1">
 							Phone / Text
 						</li>
 
 						<li>
-							<input type="radio">
+							<input type="radio" name="l5" value="2">
 							Both
 						</li>
 
@@ -620,12 +600,12 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 			<ul>
 				<li>
-					<label for="yes">Yes</label>
-					<input type="radio" name="yes">
+					<p>Yes</p>
+					<input type="radio" name="con" value="0">
 				</li>
 				<li>
-					<label for="no">No</label>
-			<input type="radio" name="no">
+					<p>No</p>
+			<input type="radio" name="con" value="1">
 				</li>
 
 			</ul>
@@ -639,12 +619,12 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 			<ul>
 				<li>
-					<label for="yes">Yes, please send me updates</label>
-					<input type="radio" name="yes">
+					<p>Yes, please send me updates</p>
+					<input type="radio" name="opt" value="0">
 				</li>
 				<li>
-					<label for="no">No, I do not wish to receive updates</label>
-			<input type="radio" name="no">
+					<p>No, I do not wish to receive updates</p>
+			<input type="radio" name="opt" value="1">
 				</li>
 
 			</ul>
@@ -669,8 +649,6 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 
 		</div>
-
-
 
 
 

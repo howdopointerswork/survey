@@ -89,10 +89,11 @@ ol{
 
 button{
 
-	font-size: 48px;
-	margin: 2em;
-	background-color: #630518;
-	color: white;
+	font-size: 32px;
+	margin: 0.5em;
+	background-color: white;
+	color: #630518;
+	border: 2px solid black;
 
 }
 
