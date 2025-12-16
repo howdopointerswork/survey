@@ -12,12 +12,13 @@
 
 
 
-
 	</head>
 
 	<body>
 
-		<h1 id="header">Petition To Expand Shuttle Bus Service to KPU Richmond Campus</h1>	
+		<h1 id="header">Petition To Expand Shuttle Bus Service</h1>	
+
+		<img src="img/shuttle.jpeg">
 
 		<div id="buttons"></div>
 
@@ -30,29 +31,35 @@
 
 			<section id="0">
 
-				<p><strong>What is the Problem:</strong> Students at Kwantlen Polytechnic University currently face limited shuttle bus options connection, Surrey, Langley, and Cloverdale campuses with the Richmond campus. This creates barriers to accessibility, safety, and academic participation, particularly to those with evening classes and late study or work schedules.</p>
+				<h2 style="font-size: 32px; margin: 0; color: white"><strong>What Is The Problem?</strong></h2>
+				<div class="questions"><p style="line-height: 1.5em">Students at Kwantlen Polytechnic University currently face limited shuttle bus options connection, Surrey, Langley, and Cloverdale campuses with the Richmond campus. This creates barriers to accessibility, safety, and academic participation, particularly to those with evening classes and late study or work schedules.</p></div>
 
-				<p><strong>What we are doing about this problem:</strong> We, the undersigned, respectfully petition the KPU Multipass Committee and the KPU Student Association to expand shuttle bus service between Surrey, Langley, and Cloverdale campuses and the Richmond campus, operating from 8:00am to 11:00pm, Monday through Friday.</p>
+				<h2 style="font-size: 32px; margin: 0; color: white"><strong>What We Are Doing About This Problem</strong></h2>
+				<div class="questions"><p style="line-height: 1.5em">We, the undersigned, respectfully petition the KPU Multipass Committee and the KPU Student Association to expand shuttle bus service between Surrey, Langley, and Cloverdale campuses and the Richmond campus, operating from 8:00am to 11:00pm, Monday through Friday.</p></div>
 
-				<p><strong>Why does this matter:</strong></p>
+				<h2 style="font-size: 32px; margin: 0; color: white"><strong>Why Does This Matter?</strong></h2>
+				<div class="questions">
 				<ul>
 				<li>Improve accessibility and equity for students across all campuses.</li>
 				<li>Enhance safety for students travelling at night.</li>
 				<li>Reduce reliance on cars and support KPU’s sustainability goals.</li>
 				</ul>
+				</div>
 
-				<p><strong>Our Call to Action:</strong> We urge the KPU Multipass Committee and KPU Student Association to take immediate steps to review, consider, and implement expanded shuttle services for the benefit of the student body.</p>
+				
+				<h2 style="font-size: 32px; margin: 0; color: white"><strong>Our Call To Action</strong></h2>
+				<div class="questions"><p style="line-height: 1.5em">We urge the KPU Multipass Committee and KPU Student Association to take immediate steps to review, consider, and implement expanded shuttle services for the benefit of the student body.</p>
 
 
 				<form action="survey.php" method="post" id="petition">
 
 					
-					<table style="margin: 0 auto;">
+					<table style="margin: 0 auto; font-size: 24px">
 						<tr>
 							<th>Full Name</th>
 							<th>KPU ID</th>
 							<th>KPU Email</th>
-							<th>Signature</th>
+							<th>Signature (Initials)</th>
 						</tr>
 						<tr>
 							<td><input type="text" name="name"></td>
@@ -65,7 +72,7 @@
 
 				
 					
-					<button name="action" value="sign">Sign</button>
+					<button name="action" value="sign" id="sign">Sign</button>
 				</form>
 
 			</section>
@@ -83,7 +90,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<ol>
 					<li>
 						<h4>Are you currently a member of any club or group (at KPU or outside)?</h4>
-						<ul>
+						<ul class="questions">
 							<li><input type="radio" name="a1" value="0">Yes, KPU-Related</li>
 							<li><input type="radio" name="a1" value="1">Yes, non-KPU-Related</li>
 							<li><input type="radio" name="a1" value="2">Both</li>
@@ -94,7 +101,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 					<li>
 						<h4>How interested are you in joining a new club or group in the next year?</h4>
-						<ul>
+						<ul class="questions">
 							<li><input type="radio" name="a2" value="0">Very Interested</li>
 							<li><input type="radio" name="a2" value="1">Somewhat Interested</li>
 							<li><input type="radio" name="a2" value="2">Neutral</li>
@@ -116,7 +123,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<ol>
 				<li>
 					<h4>Would you be willing to pay membership fees for a club or group you are interested in?</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="radio" name="b1" value="0">Yes</li>
 						<li><input type="radio" name="b1" value="1">No</li>
 						<li><input type="radio" name="b1" value="2">Maybe/Depends</li>
@@ -127,7 +134,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 				<li>
 					<h4>What price range would you feel comfortable paying for a club / group membership per semester?</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="radio" name="b2" value="0">$5 - $10</li>
 						<li><input type="radio" name="b2" value="1">$10 - $20</li>
 						<li><input type="radio" name="b2" value="2">$20 - $30</li>
@@ -140,7 +147,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 				<li>
 					<h4>What factors would influence how much you are willing to pay? (CHECK ALL THAT APPLY)</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="checkbox" name="b3[]" value="0">Type of Activities Offered</li>
 						<li><input type="checkbox" name="b3[]" value="1">Frequency of Events / Meetings</li>
 						<li><input type="checkbox" name="b3[]" value="2">Quality of facilities / Equipment</li>
@@ -163,7 +170,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<ol>
 				<li>
 					<h4>Which Areas of Club Activities are you Most Interested in? (Select All That Apply)</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="checkbox" name="c[]" value="0">Sports and Fitness (e.g., recreational sports, fitness groups, martial arts, outdoor activities)</li>
 						<li><input type="checkbox" name="c[]" value="1">Wellbeing and health (e.g., mediation, yoga, mental health support, nutrition)</li>
 						<li><input type="checkbox" name="c[]" value="2">Socializing and Networking (e.g., student mixers, cultural groups, language exchange, international student groups)</li>
@@ -190,7 +197,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				
 				<li>
 					<h4>How Often Would You Realistically Commit to Attending Club or Group activities?</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="radio" name="d1" value="0">Daily (multiple times a week)</li>
 						<li><input type="radio" name="d1" value="1">Weekly (once or twice a week)</li>
 						<li><input type="radio" name="d1" value="2">Monthly (1 – 3 times a month)</li>
@@ -200,7 +207,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 				<li>
 					<h4>On average, How Many Hours Per Week Would You be Willing to Dedicate to a Club or Group?</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="radio" name="d2" value="0">Less Than 1 Hour</li>
 						<li><input type="radio" name="d2" value="1">1 - 3 Hours</li>
 						<li><input type="radio" name="d2" value="2">4 - 6 Hours</li>
@@ -222,7 +229,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<ol>
 				<li>
 					<h4>What is the Most Important Factor When deciding to Join a Club or Group? (Choose One)</h4>
-					<ul>
+					<ul class="questions">
 						<li><input type="radio" name="e1" value="0">Cost / Affordability</li>
 						<li><input type="radio" name="e1" value="1">Location and Convenience</li>
 						<li><input type="radio" name="e1" value="2">Type of Activities Offered</li>
@@ -272,9 +279,9 @@ Thank you for taking the time to complete this survey. We are exploring interest
 		</section>
 
 <section id="8" style="display: none;">
-	<h1><strong>General Assessment:</strong> Roles & Sociability</h1>
+	<h1 style="color: white; border: 8px black dotted"><strong>General Assessment:</strong> Roles & Sociability</h1>
 
-	<p>This section is designed to explore students’ potential interests, strengths, and comfort levels in taking on different roles within clubs or organizations. Your responses will help us understand how likely students are to participate in leadership, creative, technical, or social roles, and how clubs can be structured to meet those needs.</p>
+	<p style="color: white; line-height: 1.5em">This section is designed to explore students’ potential interests, strengths, and comfort levels in taking on different roles within clubs or organizations. Your responses will help us understand how likely students are to participate in leadership, creative, technical, or social roles, and how clubs can be structured to meet those needs.</p>
 </section>
 
 
@@ -282,17 +289,17 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<h3><strong>Section G:</strong> Roles Preferences</h3>
 			<ol>
 				<li>
-					<h4>How interested are you in participating in the following types of roles within a club or group? (rate each: Very interested / Somewhat interested / Not Interested)</h4>
+					<h4>How interested are you in participating in the following types of roles within a club or group? (rate each: 1-5</h4>
 					<!-- Add values to display after -->
 					<ul>
-						<li>Organizational and Leadership Roles (e.g., president, vice president, event coordinator, treasurer, secretary)<br><input type="range" value="3" min="1" max="5" name="g1"></li>
+						<li class="questions">Organizational and Leadership Roles (e.g., president, vice president, event coordinator, treasurer, secretary)<br><input type="range" value="3" min="1" max="5" name="g1"></li>
 
-						<li>Artistic, Photography and Design Roles (e.g., graphic designer, media creator, photographer, performer, event branding)<br><input type="range" value="3" min="1" max="5" name="g2"></li>
+						<li class="questions">Artistic, Photography and Design Roles (e.g., graphic designer, media creator, photographer, performer, event branding)<br><input type="range" value="3" min="1" max="5" name="g2"></li>
 
 
-						<li>Technology, Computer Science and Engineering Roles (e.g., coder, IT support, robotics, web designer, data analyst)<br><input type="range" value="3" min="1" max="5" name="g3"></li>
+						<li class="questions">Technology, Computer Science and Engineering Roles (e.g., coder, IT support, robotics, web designer, data analyst)<br><input type="range" value="3" min="1" max="5" name="g3"></li>
 
-						<li>Social Engagement Roles (e.g., public speaker, host, outreach coordinator peer mentor, community builder)<br><input type="range" value="3" min="1" max="5" name="g4"></li>
+						<li class="questions">Social Engagement Roles (e.g., public speaker, host, outreach coordinator peer mentor, community builder)<br><input type="range" value="3" min="1" max="5" name="g4"></li>
 
 					</ul>
 				</li>
@@ -310,7 +317,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 				<h4>How Comfortable are you in leading a group of your peers?</h4>
 
-				<ul>
+				<ul class="questions">
 					<li><input type="radio" name="h1" value="0">Very Comfortable</li>
 
 					<li><input type="radio" name="h1" value="1">Somewhat Comfortable</li>
@@ -327,7 +334,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<li>
 				<h4>How comfortable are you in working on a team project with shared responsibilities?</h4>
 
-				<ul>
+				<ul class="questions">
 					<li><input type="radio" name="h2" value="0">
 						Very Comfortable</li>
 
@@ -347,7 +354,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<li>
 				<h4>How comfortable are you in presenting or speaking in front of a group?</h4>
 
-				<ul>
+				<ul class="questions">
 					<li><input type="radio" name="h3" value="0">
 						Very Comfortable</li>
 
@@ -367,7 +374,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 				<h4>How comfortable are you in taking initiative without being asked?</h4>
 
-				<ul>
+				<ul class="questions">
 					<li><input type="radio" name="h4" value="0">
 						Very Comfortable</li>
 
@@ -399,7 +406,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 				<h4>How would you describe yourself?</h4>
 
-				<ul>
+				<ul class="questions">
 					<li>
 						<input type="radio" name="i1" value="0">
 							     Introverted (prefer small groups, quiet reflection, independent tasks)
@@ -425,7 +432,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 			<li>
 				<h4>How do you prefer to build connections with others?</h4>
 
-				<ul>
+				<ul class="questions">
 					<li><input type="radio" name="i2" value="0">One-on-One Conversations
 					</li>
 
@@ -462,7 +469,7 @@ Thank you for taking the time to complete this survey. We are exploring interest
 				<li>
 					<h4>How likely are you to take on a leadership position in a club or organization?</h4>
 
-					<ul>
+					<ul class="questions">
 						<li>
 							<input type="radio" name="j1" value="0">
 							Very Likely
@@ -548,26 +555,26 @@ Thank you for taking the time to complete this survey. We are exploring interest
 
 			<ol>
 
-				<li><p><strong>Full Name</strong><br></p>
-					<input type="text" name="l1">
+				<li><p style="font-size: 48px; color: white"><strong>Full Name</strong><br></p>
+					<input type="text" name="l1" style="font-size: 48px">
 				</li>
 
-				<li><p><strong>Student Number</strong><br></p>
-					<input type="text" name="l2">
+				<li><p style="font-size: 48px; color: white"><strong>Student Number</strong><br></p>
+					<input type="text" name="l2" style="font-size: 48px">
 				</li>
 
-				<li><p><strong>KPU Email</strong><br></p>
-					<input type="text" name="l3">
+				<li><p style="font-size: 48px; color: white"><strong>KPU Email</strong><br></p>
+					<input type="text" name="l3" style="font-size: 48px">
 				</li>
 
-				<li><p><strong>Phone Number</strong><br></p>
-					<input type="text" name="l4">
+				<li><p style="font-size: 48px; color: white"><strong>Phone Number</strong><br></p>
+					<input type="text" name="l4" style="font-size: 48px">
 				</li>
 
-				<li><p><strong>Preferred Method of Contact</strong><br></p>
+				<li><p style="font-size: 48px; color: white"><strong>Preferred Method of Contact</strong><br></p>
 				</li>
 
-					<ul>
+					<ul class="questions">
 						<li>
 							<input type="radio" name="l5" value="0">
 							Email
@@ -596,9 +603,9 @@ Thank you for taking the time to complete this survey. We are exploring interest
 <section id="15" style="display: none;">
 		<h3>Consent</h3>
 
-			<p>I consent to being contacted about KPU student clubs, groups, leadership opportunities and updates to shuttle bus petition.</p>
+			<p style="font-size: 32px; color: white">I consent to being contacted about KPU student clubs, groups, leadership opportunities and updates to shuttle bus petition.</p>
 
-			<ul>
+			<ul class="questions">
 				<li>
 					<p>Yes</p>
 					<input type="radio" name="con" value="0">
@@ -615,9 +622,9 @@ Thank you for taking the time to complete this survey. We are exploring interest
 <section id="16" style="display: none;">
 		<h3>Optional Opt-In</h3>
 
-			<p>Would you like to receive a summary of this survey’s results and updates on next steps?</p>
+			<p style="font-size: 32px; color: white">Would you like to receive a summary of this survey’s results and updates on next steps?</p>
 
-			<ul>
+			<ul class="questions">
 				<li>
 					<p>Yes, please send me updates</p>
 					<input type="radio" name="opt" value="0">

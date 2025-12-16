@@ -5,7 +5,7 @@ body{
 
 	background-color: #630518;
 
-
+	font-family: 'monospace';
 
 }
 
@@ -13,8 +13,8 @@ h1{
 
 	font-weight: bold;
 	border: 2px solid black;
-	border-radius: 2px;
-	background-color: white;
+	border-radius: 4px;
+	/*background-color: white;*/
 	font-size: 72px;
 	padding: 0.5em;
 	
@@ -32,8 +32,15 @@ h3{
 h4{
 
 	font-size: 36px;
+	color: white;
 }
 
+
+img{
+
+	width: 80vw;
+	height: 60vh;
+}
 
 p, li{
 
@@ -52,9 +59,15 @@ input[type=range]{
 	margin: 4em;
 }
 
+input[type=radio], input[type=checkbox]{
+
+	transform: scale(2.0);
+	margin-right: 2em;
+}
+
 #main{
 
-	background-color: white;
+	background-color: #630518;
 	width: 90%;
 	margin: 0 auto;
 
@@ -63,17 +76,25 @@ input[type=range]{
 #submit{
 
 	font-size: 48px;
-	margin: 2em;
-	background-color: #630518;
-	color: white;
+	margin: 1em;
+
 }
 
+
+#header{
+
+
+	background-color: white;
+}
 
 
 .intro{
 
 	padding: 2em;
 	line-height: 2em;
+	color: white;
+	border: 8px black dotted;
+	font-size: 32px;
 }
 
 
@@ -94,13 +115,25 @@ button{
 	background-color: white;
 	color: #630518;
 	border: 2px solid black;
+	border-radius: 9999px;
+	padding: 0.5em;
 
+}
+
+button:hover{
+
+	background-color: #630518;
+	color: white;
+	cursor: pointer;
 }
 
 #0, #1{
 
 	  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
+
+
+
 
 nav{
 
@@ -109,9 +142,27 @@ nav{
 	text-align: center;
 	font-size: 48px;
 	
-
+	border-bottom: solid 4px black;
 
 }
+
+
+.questions{
+
+	border: solid 8px black; 
+	border-radius: 9999px; 
+	overflow: hidden;
+	margin-bottom: 4em;
+	background-color: white;
+	padding-top: 1em;
+}
+
+#sign{
+
+	background-color: #630518;
+	color: white;
+}
+
 
 /*input[type="radio"]{
 
